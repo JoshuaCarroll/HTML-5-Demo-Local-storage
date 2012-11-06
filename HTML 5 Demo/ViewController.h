@@ -17,7 +17,7 @@
 
 -(IBAction)refresh:(id)sender;
 
-
+-(IBAction)test:(id)sender;
 
 
 // @property(nonatomic,retain) UIWebView *webView;
