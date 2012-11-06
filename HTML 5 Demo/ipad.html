@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content=" initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Checkliste</title>
+<style type="text/css">
+@charset "utf-8";
+/* CSS Document */
+#border {
+	margin:25px 15px 25px 15px;
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0, .8);
+		-webkit-box-shadow: 0 1px 10px rgba(0,0,0, .8);
+		box-shadow: 0 1px 10px rgba(0,0,0, .8);
+}
+
+IMG.logo {
+	width:95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top:70px;
+	padding-bottom:70px	
+	}
+#head{
+	margin-left:25px;
+	margin-right:25px;
+	border-style:solid;
+	border-width:1px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	-moz-border-radius:5px; /* Firefox */
+-webkit-border-radius:5px; /* Safari, Chrome */
+-khtml-border-radius:5px; /* Konqueror */
+border-radius:7px; /* CSS3 */
+	
+	}
+#hr{margin-left:25px; margin-right:25px;}
+	
+#box-top {
+	margin-top:80px;
+	border-style:solid;
+	border-width:thin;
+	border-color:#FFF;
+	
+	margin-left:auto;
+	margin-right:auto;
+	padding:25px 25px 25px 25px;	
+}
+#box-middle {
+	margin-top:40px;
+	margin-bottom:40px;
+	border-style:solid;
+	border-width:thin;
+	border-color:#FFF;
+	
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px	
+}
+
+.control {
+	margin-left:30px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.fullwidthtextfield {width:100%;}
+
+#content { margin-left:40px; margin-right:40px; margin-top:40px; }
+
+	
+#status {width:150px;}
+
+.textarea {
+	width:100%;	
+	}
+	
+#footer {
+	margin-top:10px;
+	margin-bottom:10px;
+	border-style:solid;
+	border-width:thin;
+	border-color:#FFF;
+	
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:25px;
+	padding-right:25px	
+}
+
+</style>
+<script>
+function save() { /* Daten in localStorage schreiben*/
+localStorage.setItem('01-ls', document.getElementById('01').value);
+localStorage.setItem('02-ls', document.getElementById('02').value);
+localStorage.setItem('03-ls', document.getElementById('03').value);
+localStorage.setItem('04-ls', document.getElementById('04').value);
+localStorage.setItem('05-ls', document.getElementById('05').value);
+localStorage.setItem('06-ls', document.getElementById('06').value);
+
+localStorage.setItem('07-ls', document.getElementById('07').value);
+
+localStorage.setItem('08-ls', document.getElementById('08').checked);
+localStorage.setItem('09-ls', document.getElementById('09').checked);
+localStorage.setItem('10-ls', document.getElementById('10').checked);
+localStorage.setItem('11-ls', document.getElementById('11').checked);
+localStorage.setItem('12-ls', document.getElementById('12').checked);
+localStorage.setItem('13-ls', document.getElementById('13').checked);
+localStorage.setItem('14-ls', document.getElementById('14').checked);
+localStorage.setItem('15-ls', document.getElementById('15').value);
+
+localStorage.setItem('16-ls', document.getElementById('16').value);
+localStorage.setItem('17-ls', document.getElementById('17').value);
+localStorage.setItem('18-ls', document.getElementById('18').value);
+
+localStorage.setItem('19-ls', document.getElementById('19').checked);
+localStorage.setItem('20-ls', document.getElementById('20').checked);
+localStorage.setItem('21-ls', document.getElementById('21').checked);
+localStorage.setItem('22-ls', document.getElementById('22').checked);
+localStorage.setItem('23-ls', document.getElementById('23').value);
+
+localStorage.setItem('24-ls', document.getElementById('24').value);
+
+}
+
+
+function remove(){
+localStorage.clear();
+document.getElementById('01').value = '';	
+document.getElementById('02').value = '';		
+document.getElementById('03').value = '';		
+document.getElementById('04').value = '';	
+document.getElementById('05').value = '';
+document.getElementById('06').value = '';	
+
+document.getElementById('07').value = '';	
+	
+document.getElementById('15').value = '';
+document.getElementById('16').value = '';	
+document.getElementById('17').value = '';
+document.getElementById('18').value = '';	
+
+document.getElementById('23').value = '';	
+
+document.getElementById('24').value = '';	
+
+}
+
+
+function load() {
+	
+document.getElementById('01').value = localStorage.getItem('01-ls');
+document.getElementById('02').value = localStorage.getItem('02-ls');
+document.getElementById('03').value = localStorage.getItem('03-ls');
+document.getElementById('04').value = localStorage.getItem('04-ls');
+document.getElementById('05').value = localStorage.getItem('05-ls');
+document.getElementById('06').value = localStorage.getItem('06-ls');
+
+document.getElementById('07').value = localStorage.getItem('07-ls');	
+	
+document.getElementById('15').value = localStorage.getItem('15-ls');
+document.getElementById('16').value = localStorage.getItem('16-ls');
+document.getElementById('17').value = localStorage.getItem('17-ls');
+document.getElementById('18').value = localStorage.getItem('18-ls');
+
+document.getElementById('23').value = localStorage.getItem('23-ls');
+document.getElementById('24').value = localStorage.getItem('24-ls');
+
+
+}
+
+
+function internetCheck() {
+if (navigator.onLine) {
+document.getElementById('status').value = document.getElementById('status').value + "online";
+} else {
+document.getElementById('status').value = document.getElementById('status').value + "offline";
+}}
+
+
+
+
+       //<![CDATA[
+        function date() {
+            //Ab hier wird das Datum gebildet
+            var jetzt = new Date();
+            var tag = jetzt.getDate();
+            var monat = jetzt.getMonth() + 1;
+            if(monat <= 9)
+                monat = '0' + monat;
+            var jahr = jetzt.getYear();
+            if (jahr < 999)
+                jahr += 1900;
+          
+            
+            //Hier werden die Einzelteile zusammengesetzt
+            var date = 'Date : ' + tag + '.' + monat + '.' + jahr;    
+            
+            //Und hier wird das Aussehen festgelegt und alles ins Dokument geschrieben
+           
+            document.getElementById('date').innerHTML = date;
+        }
+    //]]>
+	
+	    //<![CDATA[
+        function time() {
+            //Ab hier wird das Datum gebildet
+            var jetzt2 = new Date();
+           
+            var stunden = jetzt2.getHours();
+            var minuten = jetzt2.getMinutes();
+            
+            //Hier werden die Einzelteile zusammengesetzt
+            var time = 'Time : ' + stunden + ':' + minuten;    
+            
+          
+            document.getElementById('time').innerHTML = time;
+        }
+    //]]>
+	
+</script>
+
+</head>
+<body onload="date(); time(); internetCheck()">
+<font face="Arial, Helvetica, sans-serif">
+<div id="border">
+
+<IMG class="logo" src="logo.png" />
+<div id="head">Dieses Formular ist vor Fahrtbeginn auszufüllen!<br />
+Lorem ipsum dolor sit amet, error phaedrum id mea, dictas iudicabit scribentur eum id.</div>
+
+<div id="box-top">
+
+
+  	Fahrername: <input id="01" type="text" />
+    Fahrernummer: <input id="02" type="text" size="8px"/>
+    Fahrzeugnummer: <input id="03" type="text" size="5px"/><br /><br />   
+    Datum: <input id="04" type="date" size="15px"/>
+    Uhrzeit: <input id="05" type="time" size="4px"/>
+    Fahrzeuganbauten :<select id="06" >
+    <option></option>
+    <option>Skicontainer klein</option>
+      <option>Kühlanhänger</option>
+      <option>Gepäckanhänger</option>
+      <option>Skicontainer groß</option>
+</select>
+</div>
+<div id="hr"><hr></div>  
+<div id="box-middle">
+
+Fahrziele/Route:<input id="07" type="text" class="fullwidthtextfield"/><br /><br />
+     
+</div>
+<div id="hr"><hr></div>
+
+<div id="box-middle">
+<strong>Fahrzeug Checkliste vor Fahrtbeginn:</strong>
+<div id="content">
+<table id="table" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input id="08" type="checkbox" />Bremsanlage</td>
+    <td><input id="09" type="checkbox" />Kompressor</td>
+    <td><input id="10" type="checkbox" value="" />Reifendruck/Profil</td>
+    <td><input id="11" type="checkbox" />Fahrtenschreiber</td>
+    </tr>
+  <tr>
+  <td><br /></td>
+  </tr>
+  
+  <tr>
+   <td><input id="12" type="checkbox" />Klima/Heizung</td>
+    <td><input id="13" type="checkbox" />Beleuchtung</td>
+    <td><input id="14" type="checkbox" />Entertainmentsystem</td>
+     <td>Karten :<select id="15" >
+    <option></option>
+    <option selected="selected" value="deutschland">Deutschland</option>
+      <option value="frankreich">Frankreich</option>
+      <option value="frakreich">Italien</option>
+      <option value="oesterreich">Österreich</option>
+</select></td>
+     </tr>
+ <tr>
+ <td><br /></td>
+ </tr>
+</table>   
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>Kilometerstand: <input id="16" type="text" size="5px" /> Liter</td>
+    <td>Dieselstand: <input id="17" type="text" size="5px"/> Liter</td>
+    <td>AdBluestand : <input id="18" type="text" size="5px"/> Liter</td>
+  </tr>
+</table>
+</div>
+</div>
+
+
+<div id="hr"><hr></div>
+
+
+<div id="box-middle">
+<strong>Fahrercheckliste</strong>
+<div id="content">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input id="19" type="checkbox" /> Führer/ Pers.beförderungsschein</td>
+    <td><input id="20" type="checkbox" /> Fahrzeugschein</td>
+    <td><input id="21" type="checkbox" /> Frachtpapiere</td>
+    <td><input id="22" type="checkbox" /> TÜV Bericht</td>  
+    </tr>       
+    </table><br />
+
+    Kommentare:
+    <input id="23" type="text" class="fullwidthtextfield" />
+    
+</div>
+</div>
+
+<div id="hr"><hr></div>
+
+
+<div id="box-middle">
+<strong>Kommentare</strong>
+
+<div id="content">
+
+
+<textarea id="24" rows="8"  style="width:100%" ></textarea>
+
+</div></div>
+
+<div id="hr"><hr></div>
+
+<input id="savebtn" type="button" value="Save it" onclick="save()" class="control"/>
+<input id="loadbtn" type="button" value="Load" onclick="load()" class="control"/>
+<input id="removebtn" type="button" value="Delete" onclick="remove()" class="control"/>
+<input id="status" type="text" readonly value="Internet Status: " class="control"/>
+<div id="hr"><hr></div>
+
+
+<div id="footer">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td><div id="date" ></div></td>
+<td><div id="time" ></div></td>
+<td><div style="text-align:right;">Seite : </td>
+<td><div style="text-align:center;">1 von 1</div></td>
+</tr>
+</table>
+</div>
+<div id="hr"><hr></div><br />
+
+
+
+
+
+
+
+
+
+
+
+</font>
+</body>
+</html>

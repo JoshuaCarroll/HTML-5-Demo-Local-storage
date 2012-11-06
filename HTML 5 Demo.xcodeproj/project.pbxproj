@@ -20,6 +20,15 @@
 		CF9B78B915F6A8B4006842D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9B789A15F6A8B4006842D3 /* Foundation.framework */; };
 		CF9B78C115F6A8B4006842D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78BF15F6A8B4006842D3 /* InfoPlist.strings */; };
 		CF9B78C415F6A8B4006842D3 /* HTML_5_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9B78C315F6A8B4006842D3 /* HTML_5_DemoTests.m */; };
+		CF9B78CE15F6A8D2006842D3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78CD15F6A8D2006842D3 /* index.html */; };
+		CF9B78D015F6AF53006842D3 /* ipad.html in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78CF15F6AF53006842D3 /* ipad.html */; };
+		CF9B78D215F6AF94006842D3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78D115F6AF93006842D3 /* logo.png */; };
+		CF9B78D415F6B492006842D3 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78D315F6B492006842D3 /* Default-Portrait@2x~ipad.png */; };
+		CF9B78D615F6B497006842D3 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78D515F6B497006842D3 /* Default-Portrait~ipad.png */; };
+		CF9B78D815F6B4EF006842D3 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78D715F6B4EF006842D3 /* Default-Landscape~ipad.png */; };
+		CF9B78DA15F6B4F4006842D3 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78D915F6B4F4006842D3 /* Default-Landscape@2x~ipad.png */; };
+		CF9B78DC15F6B522006842D3 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9B78DB15F6B522006842D3 /* icon@2x.png */; };
+		CFFBFDD715F6B55700A38ED2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFBFDD615F6B55700A38ED2 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,15 @@
 		CF9B78C015F6A8B4006842D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF9B78C215F6A8B4006842D3 /* HTML_5_DemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTML_5_DemoTests.h; sourceTree = "<group>"; };
 		CF9B78C315F6A8B4006842D3 /* HTML_5_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTML_5_DemoTests.m; sourceTree = "<group>"; };
+		CF9B78CD15F6A8D2006842D3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CF9B78CF15F6AF53006842D3 /* ipad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ipad.html; sourceTree = "<group>"; };
+		CF9B78D115F6AF93006842D3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CF9B78D315F6B492006842D3 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		CF9B78D515F6B497006842D3 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		CF9B78D715F6B4EF006842D3 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		CF9B78D915F6B4F4006842D3 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		CF9B78DB15F6B522006842D3 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		CFFBFDD615F6B55700A38ED2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,12 @@
 		CF9B788915F6A8B4006842D3 = {
 			isa = PBXGroup;
 			children = (
+				CFFBFDD615F6B55700A38ED2 /* icon.png */,
+				CF9B78DB15F6B522006842D3 /* icon@2x.png */,
+				CF9B78D915F6B4F4006842D3 /* Default-Landscape@2x~ipad.png */,
+				CF9B78D715F6B4EF006842D3 /* Default-Landscape~ipad.png */,
+				CF9B78D515F6B497006842D3 /* Default-Portrait~ipad.png */,
+				CF9B78D315F6B492006842D3 /* Default-Portrait@2x~ipad.png */,
 				CF9B789E15F6A8B4006842D3 /* HTML 5 Demo */,
 				CF9B78BC15F6A8B4006842D3 /* HTML 5 DemoTests */,
 				CF9B789715F6A8B4006842D3 /* Frameworks */,
@@ -113,6 +137,9 @@
 			children = (
 				CF9B78A715F6A8B4006842D3 /* AppDelegate.h */,
 				CF9B78A815F6A8B4006842D3 /* AppDelegate.m */,
+				CF9B78D115F6AF93006842D3 /* logo.png */,
+				CF9B78CD15F6A8D2006842D3 /* index.html */,
+				CF9B78CF15F6AF53006842D3 /* ipad.html */,
 				CF9B78AA15F6A8B4006842D3 /* MainStoryboard.storyboard */,
 				CF9B78AD15F6A8B4006842D3 /* ViewController.h */,
 				CF9B78AE15F6A8B4006842D3 /* ViewController.m */,
@@ -224,6 +251,15 @@
 			files = (
 				CF9B78A315F6A8B4006842D3 /* InfoPlist.strings in Resources */,
 				CF9B78AC15F6A8B4006842D3 /* MainStoryboard.storyboard in Resources */,
+				CF9B78CE15F6A8D2006842D3 /* index.html in Resources */,
+				CF9B78D015F6AF53006842D3 /* ipad.html in Resources */,
+				CF9B78D215F6AF94006842D3 /* logo.png in Resources */,
+				CF9B78D415F6B492006842D3 /* Default-Portrait@2x~ipad.png in Resources */,
+				CF9B78D615F6B497006842D3 /* Default-Portrait~ipad.png in Resources */,
+				CF9B78D815F6B4EF006842D3 /* Default-Landscape~ipad.png in Resources */,
+				CF9B78DA15F6B4F4006842D3 /* Default-Landscape@2x~ipad.png in Resources */,
+				CF9B78DC15F6B522006842D3 /* icon@2x.png in Resources */,
+				CFFBFDD715F6B55700A38ED2 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +472,7 @@
 				CF9B78C915F6A8B4006842D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF9B78CA15F6A8B4006842D3 /* Build configuration list for PBXNativeTarget "HTML 5 DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +481,7 @@
 				CF9B78CC15F6A8B4006842D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

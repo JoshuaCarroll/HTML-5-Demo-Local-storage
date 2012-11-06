@@ -14,10 +14,30 @@
 
 @implementation ViewController
 
+// @synthesize webView;
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                           pathForResource:@"ipad" ofType:@"html"] isDirectory:NO]]];
+    
+    	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(IBAction)refresh:(id)sender {
+    
+    [webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]                                                                           pathForResource:@"ipad" ofType:@"html"] isDirectory:NO]]];
+    
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"Seite wurde neu geladen!"
+                          message:@""
+                          delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alert show];
+    
+    
 }
 
 - (void)viewDidUnload
